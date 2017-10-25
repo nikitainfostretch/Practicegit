@@ -1,1 +1,90 @@
-https://github.com/nikitainfostretch/beinfinite.git
+
+nikita.pal@ICPL10269 MINGW64 ~/Desktop/git_beinfinite
+$ git init
+Initialized empty Git repository in C:/Users/nikita.pal/Desktop/git_beinfinite/.git/
+
+nikita.pal@ICPL10269 MINGW64 ~/Desktop/git_beinfinite (master)
+$ git remote add origin https://github.com/nikitainfostretch/beinfinite.git
+
+nikita.pal@ICPL10269 MINGW64 ~/Desktop/git_beinfinite (master)
+$ git remote
+origin
+
+nikita.pal@ICPL10269 MINGW64 ~/Desktop/git_beinfinite (master)
+$ git remote show origin
+* remote origin
+  Fetch URL: https://github.com/nikitainfostretch/beinfinite.git
+  Push  URL: https://github.com/nikitainfostretch/beinfinite.git
+  HEAD branch: (unknown)
+
+nikita.pal@ICPL10269 MINGW64 ~/Desktop/git_beinfinite (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+nikita.pal@ICPL10269 MINGW64 ~/Desktop/git_beinfinite (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        test.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+nikita.pal@ICPL10269 MINGW64 ~/Desktop/git_beinfinite (master)
+$ git add .
+
+nikita.pal@ICPL10269 MINGW64 ~/Desktop/git_beinfinite (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   test.txt
+
+
+nikita.pal@ICPL10269 MINGW64 ~/Desktop/git_beinfinite (master)
+$ git commit -m "first commit"
+[master (root-commit) 5b14e81] first commit
+ Committer: Nikita Pal <nikita.pal@infostretch.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test.txt
+
+nikita.pal@ICPL10269 MINGW64 ~/Desktop/git_beinfinite (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+nikita.pal@ICPL10269 MINGW64 ~/Desktop/git_beinfinite (master)
+$ git push origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 264 bytes | 132.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/nikitainfostretch/beinfinite.git
+ * [new branch]      master -> master
+
+nik
